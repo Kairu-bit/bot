@@ -5,7 +5,7 @@ module.exports.config = {
   hasPrefix: true,
   aliases: ['search'],
   description: "Search words dictionary",
-  usage: "Ai [promot]",
+  usage: "dictionary <words>",
   credits: 'Develeoper',
   cooldown: 5,
 };

@@ -5,7 +5,7 @@ module.exports.config = {
   role: 0,
   hasPrefix: true,
   aliases: ['play'],
-  usage: 'Music [promt]',
+  usage: 'Music <prompt>',
   description: 'Search music in youtube',
   credits: 'Kairu',
   cooldown: 5
