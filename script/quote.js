@@ -6,7 +6,7 @@ module.exports.config = {
   hasPrefix: true,
   description: "Get a random inspirational quote.",
   usage: "quote",
-  credits: "Developer",
+  credits: "Kairu",
   cooldown: 0
 };
 module.exports.run = async ({

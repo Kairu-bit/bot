@@ -7,7 +7,7 @@ module.exports.config = {
   aliases: ['play'],
   usage: 'Music [promt]',
   description: 'Search music in youtube',
-  credits: 'Deveploper',
+  credits: 'Kairu',
   cooldown: 5
 };
 module.exports.run = async function({

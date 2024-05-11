@@ -3,9 +3,9 @@ module.exports.config = {
   version: "1.0.0",
   role: 3,
   hasPrefix: true,
-  usage: '[reply or text]',
+  usage: 'reply to the link you want to apply the code to or write the file name to upload the code to pastebin!',
   description: 'Apply code from buildtooldev and pastebin',
-  credits: 'Deveploper',
+  credits: 'Kairu',
   cooldown: 5
 };
 module.exports.run = async function({

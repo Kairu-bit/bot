@@ -8,7 +8,7 @@ module.exports.config = {
   hasPrefix: true,
   description: "Get thread ID and group image",
   usages: "tid",
-  credits: "Developer",
+  credits: "Kairu",
   cooldowns: 0
 };
 module.exports.run = async function({

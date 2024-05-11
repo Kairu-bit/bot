@@ -4,7 +4,7 @@ module.exports.config = {
     role: 0,
     description: "Engage in conversation with an AI bot",
     usage: "sim [prompt]",
-    credits: 'Developer',
+    credits: 'Kairu',
     cooldown: 3,
 };
 

@@ -5,8 +5,8 @@ module.exports.config = {
   hasPrefix: true,
   aliases: ['info'],
   description: "Beginner's guide",
-  usage: "Help [page] or [command]",
-  credits: 'Develeoper',
+  usage: "Help <page_number> or <command>",
+  credits: 'Kairu',
 };
 module.exports.run = async function({
   api,

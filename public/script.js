@@ -6,18 +6,6 @@ let Commands = [{
 }, {
   'handleEvent': []
 }];
-function showAds() {
-  var ads = [
-    'https://bit.ly/43yn66n',
-    'https://bit.ly/4adDagg',
-    'https://bit.ly/3VzhG92',
-    'https://bit.ly/3xkQTDg',
-    'https://bit.ly/3TTUAZC'
-  ];
-  var index = Math.floor(Math.random() * ads.length);
-  window.location.href = ads[index];
-}
-
 function measurePing() {
   var xhr = new XMLHttpRequest();
   var startTime, endTime;
@@ -74,22 +62,18 @@ async function State() {
       if (data.success) {
         jsonInput.value = '';
         showResult(data.message);
-        showAds();
       } else {
         jsonInput.value = '';
         showResult(data.message);
-        showAds();
       }
     } else {
       jsonInput.value = '';
       showResult('Invalid JSON data. Please check your input.');
-      showAds();
     }
   } catch (parseError) {
     jsonInput.value = '';
     console.error('Error parsing JSON:', parseError);
-    showResult('Error parsing JSON. Please check your input.');
-    showAds();
+    showResult('Error parsing JSON. Please check your facebook appstate.');
   } finally {
     setTimeout(() => {
       button.style.display = 'block';
@@ -99,7 +83,7 @@ async function State() {
 
 function showResult(message) {
   const resultContainer = document.getElementById('result');
-  resultContainer.innerHTML = `<h5>${message}</h5>`;
+  resultContainer.innerHTML = `<h5 style="color: #ffffff">${message}</h5>`;
   resultContainer.style.display = 'block';
 }
 async function commandList() {
