@@ -34,7 +34,7 @@ module.exports.run = async function({
         helpMessage += `\t${index + 1}. 「 ${prefix}${eventCommand} 」\n`;
       });
       helpMessage += `\nPage ${page}/${Math.ceil(commands.length / pages)}. To view the next page, type '${prefix}help page number'. To view information about a specific command, type '${prefix}help command name'.`;
-      api.sendMessage(helpMessage, event.threadID, event.messageID);
+      api.sendMessage(helpMessage + "\n" + "Developer : https://facebook.com/KairuxDev\nAUTOBOT : https://kyledev-psi.vercel.app", event.threadID, event.messageID);
     } else if (!isNaN(input)) {
       const page = parseInt(input);
       const pages = 20;
@@ -49,7 +49,7 @@ module.exports.run = async function({
         helpMessage += `\t${index + 1}. 「 ${prefix}${eventCommand} 」\n`;
       });
       helpMessage += `\nPage ${page} of ${Math.ceil(commands.length / pages)}`;
-      api.sendMessage(helpMessage, event.threadID, event.messageID);
+      api.sendMessage(helpMessage + "\n" + "Developer : https://facebook.com/KairuxDev\nAUTOBOT : https://kyledev-psi.vercel.app", event.threadID, event.messageID);
     } else {
       const command = [...Utils.handleEvent, ...Utils.commands].find(([key]) => key.includes(input?.toLowerCase()))?.[1];
       if (command) {
